@@ -23,3 +23,8 @@
 .P2{
     font-size: 4vh;
 }
+
+.cube{
+    width: 50% !important;
+    height: 50% !important;
+}
