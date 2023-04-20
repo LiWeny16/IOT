@@ -38,7 +38,7 @@ const App = () => {
     console.log('click ', e);
     
     // let domain =window.domain
-    window.location.href=`http://${window.location.host}`+e.key
+    window.location.href=`http://${window.location.host}#`+e.key
   };
   return (
     <Menu
