@@ -1,0 +1,25 @@
+.FLEX{
+    display: flex;
+    /* margin: 2vh; */
+}
+.ROW{
+    flex-direction: row;
+}
+.COL{
+    flex-direction: column;
+}
+.GRID{
+    margin: 29px 163px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-gap: 20px;
+    grid-template-rows: auto auto;
+    justify-items: center;
+}
+.MARGIN{
+    margin: 2vw;
+}
+
+.P2{
+    font-size: 4vh;
+}
