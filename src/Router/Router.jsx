@@ -7,6 +7,7 @@ import React, { Component } from "react";
 import Index from "./index.jsx";
 import Admin from "./admin.jsx";
 import Fun from "./fun.jsx";
+import Game from "./Game.jsx"
 // import Navi from "../Components/Navigator.jsx";
 // import { Switch } from "antd";
 class Router extends Component {
@@ -17,6 +18,7 @@ class Router extends Component {
           <Route path="/" element={<Index />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/fun" element={<Fun />} />
+          <Route path="/game" element={<Game />} />
         </Routes>
       </HashRouter>
     );

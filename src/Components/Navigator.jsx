@@ -14,7 +14,7 @@ function getItem(label, key, icon, children, type) {
 const items = [
   getItem('Index Page', 'sub1', <MailOutlined />, [
     getItem('Item 1', 'g1', null, [getItem('数据首页', '/'), getItem('开关控制', '/admin')], 'group'),
-    getItem('Item 2', 'g2', null, [getItem('娱乐', '/fun'), getItem('Option 4', '4')], 'group'),
+    getItem('Item 2', 'g2', null, [getItem('娱乐', '/fun'), getItem('Game', '/game')], 'group'),
   ]),
   getItem('Navigation Two', 'sub2', <AppstoreOutlined />, [
     getItem('Option 5', '5'),
