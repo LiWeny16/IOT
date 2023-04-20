@@ -8,6 +8,7 @@ import RouterIndex from "./Router/Router.jsx";
 import { Col, Row } from "antd";
 import NaviTop from "./Components/NaviTop.tsx";
 import FloatBtn from "./Components/FloatButton"
+import "./Global.jsx"
 // import AlertAll,{AlertTag} from "./Components/alert.tsx"
 // const LOAL_STORAGE_KEY = 'todoApp'
 

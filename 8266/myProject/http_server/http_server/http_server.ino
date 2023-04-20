@@ -37,8 +37,9 @@ void setup(void) {
   Serial.print("IP address:\t");
   Serial.println(WiFi.localIP());  // 通过串口监视器输出ESP8266-NodeMCU的IP
 
-  esp8266_server.begin();                           // 启动网站服务
-  esp8266_server.on("/", HTTP_GET, handleRoot);     // 设置服务器根目录即'/'的函数'handleRoot'
+  esp8266_server.begin();                        // 启动网站服务
+  esp8266_server.on("/", HTTP_GET, handleRoot);  // 设置服务器根目录即'/'的函数'handleRoot'
+  esp8266_server.on("/getdata", HTTP_GET, handleData);
   esp8266_server.on("/LED", HTTP_POST, handleLED);  // 设置处理LED控制请求的函数'handleLED'
   esp8266_server.onNotFound(handleNotFound);        // 设置处理404情况的函数'handleNotFound'
 
@@ -69,16 +70,14 @@ void loop(void) {
   当用户按下按钮时，浏览器将会向NodeMCU的/LED页面发送HTTP请求，请求方式为POST。
   NodeMCU接收到此请求后将会执行handleLED函数内容*/
 void handleRoot() {
-
+  esp8266_server.sendHeader("Access-Control-Allow-Origin", "*");
   esp8266_server.send(200, "text/html", sendHTML(string1));
 }
-String sendHTML(String str) {
-  String htmlCode = "<form action=\"/LED\" method=\"POST\"><input type=\"submit\" value=\"Toggle LED\"></form>";
-  htmlCode+="\n<br>";
-  htmlCode+=str;
-    return htmlCode;
-}
 
+void handleData() {
+  esp8266_server.sendHeader("Access-Control-Allow-Origin", "*");
+  esp8266_server.send(200, "text/html", sendData(string1,string1_last,string1_past));
+}
 //处理LED控制请求的函数'handleLED'
 void handleLED() {
   digitalWrite(LED_BUILTIN, !digitalRead(LED_BUILTIN));  // 改变LED的点亮或者熄灭状态
@@ -89,4 +88,20 @@ void handleLED() {
 // 设置处理404情况的函数'handleNotFound'
 void handleNotFound() {
   esp8266_server.send(404, "text/plain", "404: Not found");  // 发送 HTTP 状态 404 (未找到页面) 并向浏览器发送文字 "404: Not found"
+}
+String sendHTML(String str) {
+  String htmlCode = "<form action=\"/LED\" method=\"POST\"><input type=\"submit\" value=\"Toggle LED\"></form>";
+  htmlCode += "\n<br>";
+  htmlCode += str;
+  return htmlCode;
+}
+String sendData(String str, String str1, String str2) {
+  String htmlCode = "";
+  htmlCode += str;
+  htmlCode += ",";
+  htmlCode += str1;
+  htmlCode += ",";
+  htmlCode += str2;
+
+  return htmlCode;
 }
