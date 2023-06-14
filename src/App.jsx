@@ -39,5 +39,5 @@ function App() {
   );
 }
 
-const style = { background: "white", padding: "10vh 0vh" };
+const style = { background: "white", padding: "8vh 0vh" };
 export default App;

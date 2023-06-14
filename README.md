@@ -1,70 +1,43 @@
-# Getting Started with Create React App
+# 数据展示流
+## esp8266获取数据流程
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. 连接wifi 打印ip地址
+2. 挂载http-get服务器
+3. 循环接收数据，从cc2530串口读取到?就存在一个string类型的变量data里
+4. 循环赋值获取上一次和上上一次的数据，即为data data_last data_past 
 
-## Available Scripts
+```c
+ string1_past = string1_last;
+      string1_last = string1;
+      string1 = char_sum;
+```
 
-In the project directory, you can run:
+---
 
-### `npm start`
+<br/>
+## 前端处理
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. 设置路由路径/getdata,网页轮询http://ip:80/getdata GET方法得到，网页端进行数据处理
+并设置跨域"Access-Control-Allow-Origin", "*"
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2.前端技术栈
++ 语言：HTML5+CSS3+less+Typescript+Javascript
++ 框架：React+Vite
++ 依赖 Axios
++ 组件库：Antd
 
-### `npm test`
+页面设置了两个哈希路由，首页展示光照，温度，湿度
+通过Axios循环发包请求8266获取data+data_last+data_past
+分割处理数据，最后展示到原子组件上
+![Alt text](image.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# 数据控制流
 
-### `npm run build`
+## 首先从浏览器上点击按钮，向
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+`http://ip:80/switch?a=1&b=${whichSwitch}`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+8266收到后转发给串口，编码方式是收到0-8的数字就反转使能
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 内网穿透
+通过cpolar内网穿透，可以实现在世界上任何一个有网络的地方控制和接收来自家里的数据，这就是目前最主流的物联网前端解决方案

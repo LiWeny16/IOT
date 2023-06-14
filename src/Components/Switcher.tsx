@@ -1,10 +1,42 @@
-import React from 'react';
-import { Switch } from 'antd';
+import { Switch } from "antd";
+import axios from "axios";
 
-const onChange = (checked: boolean) => {
-  console.log(`switch to ${checked}`);
-};
+// @ts-ignore
+import settings from "../../src/Global.jsx"
+// const onChange = (checked: boolean) => {
+//   console.log(`switch to ${checked}`);
+//   getData("LED").then(() => {
+//     console.log("doit");
+//   });
+// };
 
-const App: React.FC = () => <Switch defaultChecked onChange={onChange} />;
+function Switcher(id: any) {
+  return (
+    <>
+      <Switch
+        defaultChecked
+        onChange={() => {
+          controlEN(id.id)
+          console.log(id.id);
+        }}
+      />
+    </>
+  );
+}
+export default Switcher;
 
-export default App;
+function controlEN(num: any): any {
+  return new Promise((resolve) => {
+    let axiosConfig = {
+      method: "GET",
+      url: `${settings.domain}/switch?a=1&b=${num}`,
+    };
+    axios(axiosConfig)
+      .then((res) => {
+        resolve(res);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  });
+}
