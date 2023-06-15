@@ -1,5 +1,5 @@
 const settings={
-    domain:"http://192.168.43.6"
+    domain:" http://5a6eb8a8.r8.cpolar.top"
 }
 
 export default settings
