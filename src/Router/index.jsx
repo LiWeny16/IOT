@@ -1,25 +1,11 @@
-import React, { useEffect, useState,useRef } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Process from "../Components/Process.tsx";
 import Statisic from "../Components/Statistic.tsx";
-import Calendar from "../Components/Calendar.tsx";
-import settings from "../Global.jsx"
+import settings from "../Global.jsx";
 import axios from "axios";
-// import NaviTop from "../Components/NaviTop.tsx";
 function App() {
-  const [dataAll, setdataAll] = useState(["/","/"]); // 定义state:count
-  const [loadState,setLoadState] = useState(true)
- 
-  // setTimeout(()=>{
-  //   getData().then((e) => {
-  //     let data = e.data;
-  //     data = data.replace(/(\r)|(\?)|(\n)/g, "");
-  //     data = data.split(",");
-  //     console.log(data);
-  //     setdataAll(data);
-  //     setLoadState(false);
-  //     console.log(loadState);
-  //   })
-  // },1000)
+  const [dataAll, setdataAll] = useState(["/", "/"]); // 定义state:count
+  const [loadState, setLoadState] = useState(true);
   useEffect(() => {
     const t = setInterval(() => {
       getData().then((e) => {
@@ -43,10 +29,10 @@ function App() {
         <div className="FLEX ROW">
           <div className="MARGIN" id="indexBoxLeft">
             <div>
-              <Process dataAll={[dataAll,loadState]}></Process>
+              <Process dataAll={[dataAll, loadState]}></Process>
             </div>
             <div>
-              <Statisic dataAll={[dataAll,loadState]}></Statisic>
+              <Statisic dataAll={[dataAll, loadState]}></Statisic>
             </div>
           </div>
           {/* <div className="MARGIN">

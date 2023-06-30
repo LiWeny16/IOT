@@ -5,7 +5,7 @@
 #include <string.h>
 
 ESP8266WiFiMulti wifiMulti;  // 建立ESP8266WiFiMulti对象,对象名称是 'wifiMulti'
-SoftwareSerial MySerial(D5, D6);
+SoftwareSerial MySerialMySerial(D5, D6);
 
 ESP8266WebServer esp8266_server(80);  // 建立网络服务器对象，该对象用于响应HTTP请求。监听端口（80）
 String char_sum;
@@ -229,6 +229,5 @@ String sendData(String str, String str1, String str2) {
   htmlCode += str1;
   htmlCode += ",";
   htmlCode += str2;
-
   return htmlCode;
 }

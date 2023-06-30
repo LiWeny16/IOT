@@ -3,13 +3,6 @@ import axios from "axios";
 
 // @ts-ignore
 import settings from "../../src/Global.jsx"
-// const onChange = (checked: boolean) => {
-//   console.log(`switch to ${checked}`);
-//   getData("LED").then(() => {
-//     console.log("doit");
-//   });
-// };
-
 function Switcher(id: any) {
   return (
     <>

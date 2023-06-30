@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, { useState, useRef, useEffect } from "react";
+import React from "react";
 import "antd/dist/reset.css";
 // import { Button } from "antd";
 import Navi from "./Components/Navigator";

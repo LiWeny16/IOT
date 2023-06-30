@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import Switcher from "../Components/Switcher.tsx";
 import RedShowCard from "../Components/RedShowCard.tsx";
 import Calendar from "../Components/Calendar.tsx";
@@ -7,17 +7,6 @@ import settings from "../Global.jsx";
 export default function IndexApp() {
   const [dataAll, setdataAll] = useState(["?", "?"]); // 定义state:count
   const [loadState, setLoadState] = useState(true);
-  // setTimeout(() => {
-  //   getData().then((e) => {
-  //     let data = e.data;
-  //     data = data.replace(/(\r)|(\?)|(\n)/g, "");
-  //     data = data.split(",");
-  //     console.log(data);
-  //     setdataAll(data);
-  //     setLoadState(false);
-  //     console.log(loadState);
-  //   });
-  // }, 1000);
   useEffect(() => {
     const t = setInterval(() => {
       getData().then((e) => {
