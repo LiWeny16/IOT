@@ -5,7 +5,7 @@
 #include <string.h>
 
 ESP8266WiFiMulti wifiMulti;  // 建立ESP8266WiFiMulti对象,对象名称是 'wifiMulti'
-SoftwareSerial MySerialMySerial(D5, D6);
+SoftwareSerial MySerial(D5, D6);
 
 ESP8266WebServer esp8266_server(80);  // 建立网络服务器对象，该对象用于响应HTTP请求。监听端口（80）
 String char_sum;
@@ -24,7 +24,7 @@ void setup(void) {
   string1_past = "";
   pinMode(LED_BUILTIN, OUTPUT);  //设置内置LED引脚为输出模式以便控制LED
 
-  wifiMulti.addAP("bigonion2Gk", "454888395");  // 将需要连接的一系列WiFi ID和密码输入这里
+  wifiMulti.addAP("bigonion2G", "454888395");  // 将需要连接的一系列WiFi ID和密码输入这里
   wifiMulti.addAP("245k", "12345678");          // ESP8266-NodeMCU再启动后会扫描当前网络
   wifiMulti.addAP("onionPhone", "454888395");   // 环境查找是否有这里列出的WiFi ID。如果有
   Serial.println("Connecting ...");             // 则尝试使用此处存储的密码进行连接。

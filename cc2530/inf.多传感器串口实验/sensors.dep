@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>2</fileVersion>
+    <fileChecksum>2921554016</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\code\common\iic.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
+            <file>$PROJ_DIR$\code\common\hal_delay.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\hal_dht11.pbi</file>
+            <file>$PROJ_DIR$\code\common\hal_dht11.h</file>
+            <file>$PROJ_DIR$\code\common\iic.c</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Threads.h</file>
+            <file>$PROJ_DIR$\code\common\hal_dht11.c</file>
+            <file>$PROJ_DIR$\code\common\uart.c</file>
+            <file>$PROJ_DIR$\code\common\hal_delay.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\hal_delay.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\HalADC.pbi</file>
+            <file>$PROJ_DIR$\code\common\cc2530_ioctl.h</file>
+            <file>$PROJ_DIR$\code\common\gy30.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\iic_2.pbi</file>
+            <file>$TOOLKIT_DIR$\lib\dlib\dl8051Normal.h</file>
+            <file>$PROJ_DIR$\code\sensor\main.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.r51</file>
+            <file>$PROJ_DIR$\Debug\Obj\iic_2.r51</file>
+            <file>$PROJ_DIR$\Debug\Obj\iic.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\hal_adc.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\hal_dht11.__cstat.et</file>
+            <file>$PROJ_DIR$\code\common\uart.h</file>
+            <file>$PROJ_DIR$\code\common\gy30.c</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\stdint.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\gy30_2.r51</file>
+            <file>$TOOLKIT_DIR$\inc\ioCC2530.h</file>
+            <file>$PROJ_DIR$\code\sensor\hal_adc.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\hal_adc.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\stdbool.h</file>
+            <file>$PROJ_DIR$\code\sensor\hal_adc.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\HalADC.r51</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+            <file>$TOOLKIT_DIR$\config\devices\Texas Instruments\lnk51ew_CC2530F256_banked.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\hal_dht11.r51</file>
+            <file>$PROJ_DIR$\Debug\Exe\sensors.hex</file>
+            <file>$PROJ_DIR$\Debug\List\sensors.map</file>
+            <file>$PROJ_DIR$\Debug\Obj\uart.r51</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\stdio.h</file>
+            <file>$PROJ_DIR$\code\common\hal_adc.c</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\ycheck.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\gy30.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\ystdio.h</file>
+            <file>$PROJ_DIR$\code\common\hal_adc.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\gy30.r51</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\string.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\uart.pbi</file>
+            <file>$PROJ_DIR$\code\sensor\HalADC.c</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\xencoding_limits.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\code\common\iic_2.h</file>
+            <file>$PROJ_DIR$\code\common\gy30_2.c</file>
+            <file>$TOOLKIT_DIR$\lib\dlib\dl-pli-blxd-1e16x01n.r51</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\yvals.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\HalADC.__cstat.et</file>
+            <file>$PROJ_DIR$\code\common\gy30_2.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\hal_adc.r51</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\gy30_2.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\hal_delay.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\ysizet.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\hal_delay.r51</file>
+            <file>$PROJ_DIR$\Debug\Obj\uart.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Exe\sensors.d51</file>
+            <file>$PROJ_DIR$\code\common\iic_2.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\iic.r51</file>
+        </outputs>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 36 35 63</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\code\common\hal_delay.c</name>
+            <outputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 61</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 59</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 10</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 9 24 40 53 49 15 57 48 6</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 49 40 24 53 48 6 9 15 57</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\code\common\iic.c</name>
+            <outputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 65</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 19</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 0 9 24 40 53 49 15 57 48 6 26</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 40 24 48 57 26 9 53 49 15 0 6</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\code\common\hal_dht11.c</name>
+            <outputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 34</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 3</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 21</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 4 9 24 40 53 49 15 57 48 6 12 26</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 26 49 6 53 12 24 9 40 48 15 57 4</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\code\common\uart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 37</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 46</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 62</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 22 26</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 26 22</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\code\sensor\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 17</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 32</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 1</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 4 9 24 40 53 49 15 57 48 6 43 29 13 0 22 55 50 26 12 45 60 38 42</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 53 24 26 6 55 43 0 45 49 50 40 9 13 22 12 38 48 15 57 29 60 42 4</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\code\common\gy30.c</name>
+            <outputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 44</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 41</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 13 9 24 40 53 49 15 57 48 6 0 22</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 15 24 0 40 48 57 9 22 53 49 6 13</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\code\sensor\hal_adc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 56</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 28</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 29 26 30</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\code\common\hal_adc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 56</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 28</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 20</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 43 29 26</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 29 26 43</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\code\sensor\HalADC.c</name>
+            <outputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 31</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 11</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 54</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 22 9 24 40 53 49 15 57 48 6 43 29 12 26 45 60 38 42</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 6 24 53 45 43 49 40 9 12 38 48 15 57 29 26 60 42 22</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\code\common\gy30_2.c</name>
+            <outputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 25</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 58</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 55 9 24 40 53 49 15 57 48 6 50 22 26</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 48 50 57 53 26 9 22 24 40 15 55 49 6</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\sensors.d51</name>
+            <outputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 36 35</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 33 44 25 56 61 34 65 18 17 37 52</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\code\common\iic_2.c</name>
+            <outputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 18</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 14</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 50 9 24 40 53 49 15 57 48 6 26</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 40 24 48 57 26 9 53 49 15 50 6</file>
+                </tool>
+            </inputs>
+        </file>
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>XLINK</tool>
+        </forcedrebuild>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs>
+            <file>$PROJ_DIR$\Release\Obj\iic.pbi</file>
+            <file>$PROJ_DIR$\Release\Exe\sensors.d51</file>
+            <file>$PROJ_DIR$\Release\Obj\iic_2.r51</file>
+            <file>$PROJ_DIR$\Release\Obj\hal_delay.pbi</file>
+            <file>$PROJ_DIR$\Release\Obj\hal_dht11.pbi</file>
+            <file>$PROJ_DIR$\Release\Obj\main.r51</file>
+            <file>$TOOLKIT_DIR$\config\devices\_generic\lnk51ew_8052.xcl</file>
+            <file>$PROJ_DIR$\Release\Obj\hal_adc.pbi</file>
+            <file>$PROJ_DIR$\Release\Obj\uart.pbi</file>
+            <file>$PROJ_DIR$\Release\Obj\iic.r51</file>
+            <file>$PROJ_DIR$\Release\Obj\hal_adc.r51</file>
+            <file>$PROJ_DIR$\Release\Exe\sensors.hex</file>
+            <file>$PROJ_DIR$\code\common\iic.h</file>
+            <file>$PROJ_DIR$\code\common\hal_delay.c</file>
+            <file>$PROJ_DIR$\code\common\hal_dht11.h</file>
+            <file>$PROJ_DIR$\code\common\iic.c</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Threads.h</file>
+            <file>$PROJ_DIR$\code\common\hal_dht11.c</file>
+            <file>$PROJ_DIR$\code\common\uart.c</file>
+            <file>$PROJ_DIR$\code\common\hal_delay.h</file>
+            <file>$PROJ_DIR$\code\common\cc2530_ioctl.h</file>
+            <file>$PROJ_DIR$\code\common\gy30.h</file>
+            <file>$TOOLKIT_DIR$\lib\dlib\dl8051Normal.h</file>
+            <file>$PROJ_DIR$\code\sensor\main.c</file>
+            <file>$PROJ_DIR$\code\common\uart.h</file>
+            <file>$PROJ_DIR$\code\common\gy30.c</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\stdint.h</file>
+            <file>$TOOLKIT_DIR$\inc\ioCC2530.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\stdbool.h</file>
+            <file>$TOOLKIT_DIR$\config\devices\Texas Instruments\lnk51ew_CC2530F256_banked.xcl</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\stdio.h</file>
+            <file>$PROJ_DIR$\code\common\hal_adc.c</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\ycheck.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\ystdio.h</file>
+            <file>$PROJ_DIR$\code\common\hal_adc.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\string.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\xencoding_limits.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\code\common\iic_2.h</file>
+            <file>$PROJ_DIR$\code\common\gy30_2.c</file>
+            <file>$TOOLKIT_DIR$\lib\dlib\dl-pli-blxd-1e16x01n.r51</file>
+            <file>$PROJ_DIR$\Release\Obj\gy30_2.r51</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\yvals.h</file>
+            <file>$PROJ_DIR$\Release\List\sensors.map</file>
+            <file>$PROJ_DIR$\Release\Obj\gy30.__cstat.et</file>
+            <file>$PROJ_DIR$\Release\Obj\main.__cstat.et</file>
+            <file>$PROJ_DIR$\Release\Obj\iic_2.pbi</file>
+            <file>$PROJ_DIR$\Release\Obj\main.pbi</file>
+            <file>$PROJ_DIR$\code\common\gy30_2.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\DLib_Product.h</file>
+            <file>$TOOLKIT_DIR$\inc\dlib\c\ysizet.h</file>
+            <file>$PROJ_DIR$\Release\Obj\hal_dht11.__cstat.et</file>
+            <file>$PROJ_DIR$\code\common\iic_2.c</file>
+            <file>$PROJ_DIR$\Release\Obj\uart.__cstat.et</file>
+            <file>$PROJ_DIR$\Release\Obj\uart.r51</file>
+            <file>$PROJ_DIR$\Release\Obj\gy30.pbi</file>
+            <file>$PROJ_DIR$\Release\Obj\hal_dht11.r51</file>
+            <file>$PROJ_DIR$\Release\Obj\gy30_2.pbi</file>
+            <file>$PROJ_DIR$\Release\Obj\gy30.r51</file>
+            <file>$PROJ_DIR$\Release\Exe\sensors.a51</file>
+            <file>$PROJ_DIR$\Release\Obj\hal_delay.r51</file>
+            <file>$PROJ_DIR$\Release\Obj\iic.__cstat.et</file>
+            <file>$PROJ_DIR$\Release\Obj\sensors.pbd</file>
+        </outputs>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 1 43 11</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Release\Exe\sensors.d51</name>
+            <outputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 43 11</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 29 58 60 56 9 5 54 40</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\code\common\hal_delay.c</name>
+            <outputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 60</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 3</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 19 26 32 42 37 22 49 36 16</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 37 32 26 42 36 16 19 22 49</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\code\common\iic.c</name>
+            <outputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 9</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 0</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 61</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 12 19 26 32 42 37 22 49 36 16 27</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 32 26 36 49 27 19 42 37 22 12 16</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\code\common\hal_dht11.c</name>
+            <outputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 56</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 4</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 51</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 14 19 26 32 42 37 22 49 36 16 20 27</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 27 37 16 42 20 26 19 32 36 22 49 14</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\code\common\uart.c</name>
+            <outputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 54</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 8</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 53</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 24 27</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 27 24</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\code\sensor\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 5</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 47</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 45</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 14 19 26 32 42 37 22 49 36 16 34 28 21 12 24 27 20 35 50 30 33</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 12 26 42 50 34 30 19 32 21 20 37 16 28 14 24 27 35 36 22 49 33</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\code\common\gy30.c</name>
+            <outputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 58</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 55</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 44</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 21 19 26 32 42 37 22 49 36 16 12 24</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 22 26 12 32 36 49 19 24 42 37 16 21</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\code\common\hal_adc.c</name>
+            <outputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 10</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 7</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 28 27 34</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\code\common\gy30_2.c</name>
+            <outputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 41</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 57</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 38 42 22 27 19 24 26 32 36 49 48 37 16</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\code\common\iic_2.c</name>
+            <outputs>
+                <tool>
+                    <name>ICC8051</name>
+                    <file> 2</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 46</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 22 32 26 27 19 42 37 36 49 38 16</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Release\Exe\sensors.a51</name>
+            <inputs>
+                <tool>
+                    <name>XLINK</name>
+                    <file> 6 58 56 9 5 54</file>
+                </tool>
+            </inputs>
+        </file>
+    </configuration>
+</project>

@@ -1,0 +1,1665 @@
+################################################################################
+#                                                                              #
+#      IAR Universal Linker V6.4.6.89                                          #
+#                                                                              #
+#           Link time     =  05/Jun/2023  19:55:13                             #
+#           Target CPU    =  x51                                               #
+#           List file     =  D:\过程控制系统\workspace\inf.多传感器串口实验\De #
+#                            bug\List\sensors.map                              #
+#           Output file 1 =  D:\过程控制系统\workspace\inf.多传感器串口实验\De #
+#                            bug\Exe\sensors.hex                               #
+#                            Format: intel-extended                            #
+#           Output file 2 =  D:\过程控制系统\workspace\inf.多传感器串口实验\De #
+#                            bug\Exe\sensors.d51                               #
+#                            Format: ubrof10                                   #
+#                            UBROF version 10.0.6                              #
+#                            Using library modules for C-SPY (-rt)             #
+#           Command line  =  -f                                                #
+#                            C:\Users\HANXCE~1\AppData\Local\Temp\EW6460.tmp   #
+#                            (D:\过程控制系统\workspace\inf.多传感器串口实验\D #
+#                            ebug\Obj\gy30.r51                                 #
+#                            D:\过程控制系统\workspace\inf.多传感器串口实验\De #
+#                            bug\Obj\gy30_2.r51                                #
+#                            D:\过程控制系统\workspace\inf.多传感器串口实验\De #
+#                            bug\Obj\hal_adc.r51                               #
+#                            D:\过程控制系统\workspace\inf.多传感器串口实验\De #
+#                            bug\Obj\hal_delay.r51                             #
+#                            D:\过程控制系统\workspace\inf.多传感器串口实验\De #
+#                            bug\Obj\hal_dht11.r51                             #
+#                            D:\过程控制系统\workspace\inf.多传感器串口实验\De #
+#                            bug\Obj\iic.r51                                   #
+#                            D:\过程控制系统\workspace\inf.多传感器串口实验\De #
+#                            bug\Obj\iic_2.r51                                 #
+#                            D:\过程控制系统\workspace\inf.多传感器串口实验\De #
+#                            bug\Obj\main.r51                                  #
+#                            D:\过程控制系统\workspace\inf.多传感器串口实验\De #
+#                            bug\Obj\uart.r51                                  #
+#                            -o                                                #
+#                            D:\过程控制系统\workspace\inf.多传感器串口实验\De #
+#                            bug\Exe\sensors.d51                               #
+#                            -l                                                #
+#                            D:\过程控制系统\workspace\inf.多传感器串口实验\De #
+#                            bug\List\sensors.map                              #
+#                            -xms                                              #
+#                            -ID:\过程控制系统\开发软件\IAR10_10_1\8051\LIB\   #
+#                            -f                                                #
+#                            "D:\过程控制系统\开发软件\IAR10_10_1\8051\config\ #
+#                            devices\Texas Instruments\lnk51ew_CC2530F256_bank #
+#                            ed.xcl"                                           #
+#                            (-D_IDATA0_START=0x00 -D_IDATA0_END=0xFF          #
+#                            -D_PDATA0_START=0x1E00 -D_PDATA0_END=0x1EFF       #
+#                            -D_IXDATA0_START=0x0001 -D_IXDATA0_END=0x1EFF     #
+#                            -D_XDATA0_START=_IXDATA0_START                    #
+#                            -D_XDATA0_END=_IXDATA0_END                        #
+#                            -D_NEAR_CODE_START=0x0000                         #
+#                            -D_FIRST_BANK_ADDR=0x10000 -D?REGISTER_BANK=0x0   #
+#                            -D_REGISTER_BANK_START=0x0 -D_BREG_START=0x00     #
+#                            -D?VB=0x20 -Z(BIT)BREG=_BREG_START                #
+#                            -Z(BIT)BIT_N=0-7F                                 #
+#                            -Z(DATA)REGISTERS+8=_REGISTER_BANK_START          #
+#                            -Z(DATA)BDATA_Z,BDATA_N,BDATA_I=20-2F             #
+#                            -Z(DATA)VREG=08-7F -Z(DATA)PSP,XSP=08-7F          #
+#                            -Z(DATA)DOVERLAY=08-7F                            #
+#                            -Z(DATA)DATA_I,DATA_Z,DATA_N=08-7F                #
+#                            -U(IDATA)0-7F=(DATA)0-7F                          #
+#                            -Z(IDATA)IDATA_I,IDATA_Z,IDATA_N=08-_IDATA0_END   #
+#                            -Z(IDATA)ISTACK+_IDATA_STACK_SIZE#08-_IDATA0_END  #
+#                            -Z(IDATA)IOVERLAY=08-FF -Z(CODE)INTVEC=0          #
+#                            -Z(CODE)CSTART=_NEAR_CODE_START-(_CODEBANK_START- #
+#                            1)                                                #
+#                            -Z(CODE)BIT_ID,BDATA_ID,DATA_ID,IDATA_ID,IXDATA_I #
+#                            D,PDATA_ID,XDATA_ID=_NEAR_CODE_START-(_CODEBANK_S #
+#                            TART-1)                                           #
+#                            -Z(CODE)BANK_RELAYS,RCODE,DIFUNCT,CODE_C,CODE_N,N #
+#                            EAR_CODE=_NEAR_CODE_START-(_CODEBANK_START-1)     #
+#                            -P(CODE)BANKED_CODE=_NEAR_CODE_START-(_CODEBANK_S #
+#                            TART-1),[(_CODEBANK_START+_FIRST_BANK_ADDR)-(_COD #
+#                            EBANK_END+_FIRST_BANK_ADDR)]*_NR_OF_BANKS+10000   #
+#                            -Z(CODE)CHECKSUM#(_CODEBANK_START-1)              #
+#                            -Z(XDATA)PDATA_Z,PDATA_I=_PDATA0_START-_PDATA0_EN #
+#                            D                                                 #
+#                            -P(XDATA)PDATA_N=_PDATA0_START-_PDATA0_END        #
+#                            -Z(XDATA)PSTACK+_PDATA_STACK_SIZE=_PDATA0_START-_ #
+#                            PDATA0_END                                        #
+#                            -Z(XDATA)EXT_STACK+_EXTENDED_STACK_SIZE=_EXTENDED #
+#                            _STACK_START                                      #
+#                            -Z(XDATA)XSTACK+_XDATA_STACK_SIZE=_XDATA0_START-_ #
+#                            XDATA0_END                                        #
+#                            -Z(XDATA)IXDATA_Z,IXDATA_I=_IXDATA0_START-_IXDATA #
+#                            0_END                                             #
+#                            -P(XDATA)IXDATA_N=_IXDATA0_START-_IXDATA0_END     #
+#                            -Z(XDATA)XDATA_Z,XDATA_I=_XDATA0_START-_XDATA0_EN #
+#                            D                                                 #
+#                            -P(XDATA)XDATA_N=_XDATA0_START-_XDATA0_END        #
+#                            -Z(XDATA)XDATA_HEAP+_XDATA_HEAP_SIZE=_XDATA0_STAR #
+#                            T-_XDATA0_END                                     #
+#                            -Z(CONST)XDATA_ROM_C=_XDATA0_START-_XDATA0_END    #
+#                            -cx51                                             #
+#                            -M(CODE)[(_CODEBANK_START+_FIRST_BANK_ADDR)-(_COD #
+#                            EBANK_END+_FIRST_BANK_ADDR)]*_NR_OF_BANKS+0x10000 #
+#                            =0x8000                                           #
+#                            -ww69=i -D_BANK0_START=0x00000                    #
+#                            -D_BANK0_END=0x07FFF -D_BANK1_START=0x18000       #
+#                            -D_BANK1_END=0x1FFFF -D_BANK2_START=0x28000       #
+#                            -D_BANK2_END=0x2FFFF -D_BANK3_START=0x38000       #
+#                            -D_BANK3_END=0x3FFFF -D_BANK4_START=0x48000       #
+#                            -D_BANK4_END=0x4FFFF -D_BANK5_START=0x58000       #
+#                            -D_BANK5_END=0x5FFFF -D_BANK6_START=0x68000       #
+#                            -D_BANK6_END=0x6FFFF -D_BANK7_START=0x78000       #
+#                            -D_BANK7_END=0x7FFFF                              #
+#                            -P(CODE)BANK0=_BANK0_START-_BANK0_END             #
+#                            -P(CODE)BANK1=_BANK1_START-_BANK1_END             #
+#                            -P(CODE)BANK2=_BANK2_START-_BANK2_END             #
+#                            -P(CODE)BANK3=_BANK3_START-_BANK3_END             #
+#                            -P(CODE)BANK4=_BANK4_START-_BANK4_END             #
+#                            -P(CODE)BANK5=_BANK5_START-_BANK5_END             #
+#                            -P(CODE)BANK6=_BANK6_START-_BANK6_END             #
+#                            -P(CODE)BANK7=_BANK7_START-_BANK7_END             #
+#                            -D_FLASH_LOCK_BITS_START=0x7FFF0                  #
+#                            -D_FLASH_LOCK_BITS_END=0x7FFFF                    #
+#                            -Z(CODE)FLASH_LOCK_BITS=_FLASH_LOCK_BITS_START-_F #
+#                            LASH_LOCK_BITS_END                                #
+#                            -U(CODE)0x0000=(CODE)_FLASH_LOCK_BITS_START-_FLAS #
+#                            H_LOCK_BITS_END)                                  #
+#                            -D_NR_OF_VIRTUAL_REGISTERS=8 -D?PBANK=0x93        #
+#                            -D?CBANK=0x9F -D?CBANK_MASK=0xFF                  #
+#                            -e?BCALL_FF=?BCALL -e?BRET_FF=?BRET               #
+#                            -e?BDISPATCH_FF=?BDISPATCH                        #
+#                            -D_CODEBANK_START=0x8000 -D_CODEBANK_END=0xFFFF   #
+#                            -D_NR_OF_BANKS=0x07                               #
+#                            -ID:\过程控制系统\开发软件\IAR10_10_1\8051\CONFIG #
+#                            \                                                 #
+#                            -rt                                               #
+#                            -Ointel-extended=D:\过程控制系统\workspace\inf.多 #
+#                            传感器串口实验\Debug\Exe\sensors.hex              #
+#                            -s __program_start                                #
+#                            D:\过程控制系统\开发软件\IAR10_10_1\8051\LIB\DLIB #
+#                            \dl-pli-blxd-1e16x01n.r51                         #
+#                            -D_IDATA_STACK_SIZE=0x40 -D?ESP=0 -D?ESP_MASK=0   #
+#                            -D_EXTENDED_STACK_START=0                         #
+#                            -D_EXTENDED_STACK_SIZE=0                          #
+#                            -D_PDATA_STACK_SIZE=0x80                          #
+#                            -D_XDATA_STACK_SIZE=0x1FF                         #
+#                            -D_XDATA_HEAP_SIZE=0xFF -D_FAR_HEAP_SIZE=0xFFF    #
+#                            -D_HUGE_HEAP_SIZE=0xFFF                           #
+#                            -D_FAR22_HEAP_SIZE=0xFFF)                         #
+#                                                                              #
+#                           Copyright (C) 1987-2016 IAR Systems AB.            #
+################################################################################
+
+
+
+
+
+                ****************************************
+                *                                      *
+                *           CROSS REFERENCE            *
+                *                                      *
+                ****************************************
+
+       Program entry at : CODE      0000005D  Relocatable, from module : CSTARTUP
+
+
+
+
+                ****************************************
+                *                                      *
+                *            RUNTIME MODEL             *
+                *                                      *
+                ****************************************
+
+  __Heap_Handler             = Basic
+  __SystemLibrary            = DLib
+  __calling_convention       = xdata_reentrant
+  __code_model               = banked
+  __core                     = plain
+  __data_model               = large
+  __dlib_file_descriptor     = 0
+  __dlib_full_locale_support = 0
+  __dptr_size                = 16
+  __extended_stack           = disabled
+  __location_for_constants   = data
+  __number_of_dptrs          = 1
+  __register_banks           = *
+  __rt_version               = 1
+
+                ****************************************
+                *                                      *
+                *    AUTOMATIC SYMBOL REDIRECTIONS     *
+                *                                      *
+                ****************************************
+
+       All references to: _Printf
+         were redirected to: _PrintfTiny
+       All references to: _Printf::?relay
+         were redirected to: _PrintfTiny::?relay
+
+
+
+                ****************************************
+                *                                      *
+                *              MODULE MAP              *
+                *                                      *
+                ****************************************
+
+
+  DEFINED ABSOLUTE ENTRIES
+    *************************************************************************
+
+  DEFINED ABSOLUTE ENTRIES
+  PROGRAM MODULE, NAME : ?ABS_ENTRY_MOD
+
+Absolute parts
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _FAR22_HEAP_SIZE        00000FFF 
+           _HUGE_HEAP_SIZE         00000FFF 
+           _FAR_HEAP_SIZE          00000FFF 
+           _XDATA_HEAP_SIZE        000000FF 
+           _XDATA_STACK_SIZE       000001FF 
+           _PDATA_STACK_SIZE       00000080 
+           _EXTENDED_STACK_SIZE    00000000 
+           _EXTENDED_STACK_START   00000000 
+           ?ESP_MASK               00000000 
+           ?ESP                    00000000 
+           _IDATA_STACK_SIZE       00000040 
+           _NR_OF_BANKS            00000007 
+           _CODEBANK_END           0000FFFF 
+           _CODEBANK_START         00008000 
+           ?CBANK_MASK             000000FF 
+           ?CBANK                  0000009F        ?RESET_CODE_BANK (CSTARTUP)
+                                                   Segment part 0 (?BANKED_CODE_SUPPORT)
+           ?PBANK                  00000093 
+           _NR_OF_VIRTUAL_REGISTERS
+                                   00000008 
+           _FLASH_LOCK_BITS_END    0003FFFF 
+           _FLASH_LOCK_BITS_START
+                                   0003FFF0 
+           _BANK7_END              0003FFFF 
+           _BANK7_START            00038000 
+           _BANK6_END              00037FFF 
+           _BANK6_START            00030000 
+           _BANK5_END              0002FFFF 
+           _BANK5_START            00028000 
+           _BANK4_END              00027FFF 
+           _BANK4_START            00020000 
+           _BANK3_END              0001FFFF 
+           _BANK3_START            00018000 
+           _BANK2_END              00017FFF 
+           _BANK2_START            00010000 
+           _BANK1_END              0000FFFF 
+           _BANK1_START            00008000 
+           _BANK0_END              00007FFF 
+           _BANK0_START            00000000 
+           ?VB                     00000020        ?BANKED_ENTER_XDATA (?BANKED_ENTER_XDATA)
+                                                   ?BANKED_LEAVE_XDATA (?BANKED_LEAVE_XDATA)
+                                                   ?INTERRUPT_ENTER_XSP (?INTERRUPT_ENTER_XSP)
+                                                   ?INTERRUPT_LEAVE_XSP (?INTERRUPT_LEAVE_XSP)
+           _BREG_START             00000000 
+           _REGISTER_BANK_START    00000000 
+           ?REGISTER_BANK          00000000        Segment part 6 (CSTARTUP)
+           _FIRST_BANK_ADDR        00010000 
+           _NEAR_CODE_START        00000000 
+           _XDATA0_END             00001EFF 
+           _XDATA0_START           00000001 
+           _IXDATA0_END            00001EFF 
+           _IXDATA0_START          00000001 
+           _PDATA0_END             00001EFF 
+           _PDATA0_START           00001E00 
+           _IDATA0_END             000000FF 
+           _IDATA0_START           00000000 
+    *************************************************************************
+
+  FILE NAME : D:\过程控制系统\workspace\inf.多传感器串口实验\Debug\Obj\gy30.r51
+  PROGRAM MODULE, NAME : gy30
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BANKED_CODE> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 00000B79 - 00000C00 (0x88 bytes), align: 0
+  Segment part 6.             Intra module refs:   Read_IIC_1_Data::?relay
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Read_IIC_1_Data         00000B79 
+               calls direct
+               XSTACK = 00000000 ( 00000009 )
+    -------------------------------------------------------------------------
+BANK_RELAYS
+  Relative segment, address: CODE 000000C2 - 000000C7 (0x6 bytes), align: 0
+  Segment part 7.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           Read_IIC_1_Data::?relay
+                                   000000C2        main (main)
+
+    *************************************************************************
+
+  FILE NAME : D:\过程控制系统\workspace\inf.多传感器串口实验\Debug\Obj\gy30_2.r51
+  PROGRAM MODULE, NAME : gy30_2
+
+  SEGMENTS IN THE MODULE
+  ======================
+SFR_AN
+  Relative segment, address: DATA 000000FE - 000000FE (0x1 bytes), align: 0
+  Segment part 1. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P1DIR                   000000FE 
+
+    *************************************************************************
+
+  FILE NAME : D:\过程控制系统\workspace\inf.多传感器串口实验\Debug\Obj\hal_adc.r51
+  PROGRAM MODULE, NAME : hal_adc
+
+  SEGMENTS IN THE MODULE
+  ======================
+SFR_AN
+  Relative segment, address: DATA 000000B4 - 000000B4 (0x1 bytes), align: 0
+  Segment part 1. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ADCCON1                 000000B4 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000B6 - 000000B6 (0x1 bytes), align: 0
+  Segment part 2. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ADCCON3                 000000B6 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000BA - 000000BA (0x1 bytes), align: 0
+  Segment part 3. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ADCL                    000000BA 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000BB - 000000BB (0x1 bytes), align: 0
+  Segment part 4. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ADCH                    000000BB 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000F2 - 000000F2 (0x1 bytes), align: 0
+  Segment part 5. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ADCCFG                  000000F2 
+
+    *************************************************************************
+
+  FILE NAME : D:\过程控制系统\workspace\inf.多传感器串口实验\Debug\Obj\hal_delay.r51
+  PROGRAM MODULE, NAME : hal_delay
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BANKED_CODE> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 00000C01 - 00000C1C (0x1c bytes), align: 0
+  Segment part 6.             Intra module refs:   delayUsIn32Mhz::?relay
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           delayUsIn32Mhz          00000C01 
+    -------------------------------------------------------------------------
+<BANKED_CODE> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 00000C1D - 00000C5D (0x41 bytes), align: 0
+  Segment part 8.             Intra module refs:   delayMs::?relay
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           delayMs                 00000C1D 
+               XSTACK = 00000000 ( 0000000A )
+    -------------------------------------------------------------------------
+BANK_RELAYS
+  Relative segment, address: CODE 000000C8 - 000000CD (0x6 bytes), align: 0
+  Segment part 7.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           delayUsIn32Mhz::?relay
+                                   000000C8        IIC_GetACK (iic)
+                                                   IIC_ReadOneByteData (iic)
+                                                   IIC_SendACK (iic)
+                                                   IIC_Start (iic)
+                                                   IIC_Stop (iic)
+                                                   IIC_WriteOneByteData (iic)
+                                                   Read_IIC_1_Data (gy30)
+    -------------------------------------------------------------------------
+BANK_RELAYS
+  Relative segment, address: CODE 000000CE - 000000D3 (0x6 bytes), align: 0
+  Segment part 9.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           delayMs::?relay         000000CE        main (main)
+
+    *************************************************************************
+
+  FILE NAME : D:\过程控制系统\workspace\inf.多传感器串口实验\Debug\Obj\hal_dht11.r51
+  PROGRAM MODULE, NAME : hal_dht11
+
+  SEGMENTS IN THE MODULE
+  ======================
+SFR_AN
+  Relative segment, address: DATA 00000080 - 00000080 (0x1 bytes), align: 0
+  Segment part 1. ROOT        Intra module refs:   IIC_GetACK (iic)
+                                                   IIC_ReadOneByteData (iic)
+                                                   IIC_SendACK (iic)
+                                                   IIC_Start (iic)
+                                                   IIC_Stop (iic)
+                                                   IIC_WriteOneByteData (iic)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_P0                   00000080 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           P0                      00000080 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 0000008F - 0000008F (0x1 bytes), align: 0
+  Segment part 2. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P0INP                   0000008F 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000F3 - 000000F3 (0x1 bytes), align: 0
+  Segment part 3. ROOT        Intra module refs:   IIC_Init (iic)
+                                                   initUart0 (uart)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P0SEL                   000000F3 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000F7 - 000000F7 (0x1 bytes), align: 0
+  Segment part 4. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P2INP                   000000F7 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000FD - 000000FD (0x1 bytes), align: 0
+  Segment part 5. ROOT        Intra module refs:   IIC_GetACK (iic)
+                                                   IIC_Init (iic)
+                                                   IIC_ReadOneByteData (iic)
+                                                   IIC_SendACK (iic)
+                                                   IIC_Start (iic)
+                                                   IIC_Stop (iic)
+                                                   IIC_WriteOneByteData (iic)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P0DIR                   000000FD 
+
+    *************************************************************************
+
+  FILE NAME : D:\过程控制系统\workspace\inf.多传感器串口实验\Debug\Obj\iic.r51
+  PROGRAM MODULE, NAME : iic
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BANKED_CODE> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 000008BF - 000008CD (0xf bytes), align: 0
+  Segment part 9.             Intra module refs:   IIC_Init::?relay
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           IIC_Init                000008BF 
+    -------------------------------------------------------------------------
+<BANKED_CODE> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 000008CE - 000008F1 (0x24 bytes), align: 0
+  Segment part 11.            Intra module refs:   IIC_Start::?relay
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           IIC_Start               000008CE 
+               calls direct
+               ISTACK = 00000000 ( 00000002 )
+    -------------------------------------------------------------------------
+<BANKED_CODE> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 000008F2 - 00000915 (0x24 bytes), align: 0
+  Segment part 13.            Intra module refs:   IIC_Stop::?relay
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           IIC_Stop                000008F2 
+               calls direct
+               ISTACK = 00000000 ( 00000002 )
+    -------------------------------------------------------------------------
+<BANKED_CODE> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 00000916 - 0000094B (0x36 bytes), align: 0
+  Segment part 15.            Intra module refs:   IIC_GetACK::?relay
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           IIC_GetACK              00000916 
+               calls direct
+               XSTACK = 00000000 ( 00000009 )
+    -------------------------------------------------------------------------
+<BANKED_CODE> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 0000094C - 00000977 (0x2c bytes), align: 0
+  Segment part 17.            Intra module refs:   IIC_SendACK::?relay
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           IIC_SendACK             0000094C 
+               calls direct
+               XSTACK = 00000000 ( 00000009 )
+    -------------------------------------------------------------------------
+<BANKED_CODE> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 00000978 - 000009B4 (0x3d bytes), align: 0
+  Segment part 19.            Intra module refs:   IIC_WriteOneByteData::?relay
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           IIC_WriteOneByteData    00000978 
+               calls direct
+               XSTACK = 00000000 ( 00000009 )
+    -------------------------------------------------------------------------
+<BANKED_CODE> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 000009B5 - 000009EF (0x3b bytes), align: 0
+  Segment part 21.            Intra module refs:   IIC_ReadOneByteData::?relay
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           IIC_ReadOneByteData     000009B5 
+               calls direct
+               XSTACK = 00000000 ( 00000009 )
+    -------------------------------------------------------------------------
+BANK_RELAYS
+  Relative segment, address: CODE 000000D4 - 000000D9 (0x6 bytes), align: 0
+  Segment part 10.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           IIC_Init::?relay        000000D4        main (main)
+    -------------------------------------------------------------------------
+BANK_RELAYS
+  Relative segment, address: CODE 000000DA - 000000DF (0x6 bytes), align: 0
+  Segment part 12.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           IIC_Start::?relay       000000DA        Read_IIC_1_Data (gy30)
+    -------------------------------------------------------------------------
+BANK_RELAYS
+  Relative segment, address: CODE 000000E0 - 000000E5 (0x6 bytes), align: 0
+  Segment part 14.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           IIC_Stop::?relay        000000E0        Read_IIC_1_Data (gy30)
+    -------------------------------------------------------------------------
+BANK_RELAYS
+  Relative segment, address: CODE 000000E6 - 000000EB (0x6 bytes), align: 0
+  Segment part 16.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           IIC_GetACK::?relay      000000E6        Read_IIC_1_Data (gy30)
+    -------------------------------------------------------------------------
+BANK_RELAYS
+  Relative segment, address: CODE 000000EC - 000000F1 (0x6 bytes), align: 0
+  Segment part 18.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           IIC_SendACK::?relay     000000EC        Read_IIC_1_Data (gy30)
+    -------------------------------------------------------------------------
+BANK_RELAYS
+  Relative segment, address: CODE 000000F2 - 000000F7 (0x6 bytes), align: 0
+  Segment part 20.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           IIC_WriteOneByteData::?relay
+                                   000000F2        Read_IIC_1_Data (gy30)
+    -------------------------------------------------------------------------
+BANK_RELAYS
+  Relative segment, address: CODE 000000F8 - 000000FD (0x6 bytes), align: 0
+  Segment part 22.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           IIC_ReadOneByteData::?relay
+                                   000000F8        Read_IIC_1_Data (gy30)
+
+    *************************************************************************
+
+  FILE NAME : D:\过程控制系统\workspace\inf.多传感器串口实验\Debug\Obj\iic_2.r51
+  PROGRAM MODULE, NAME : iic_2
+
+  SEGMENTS IN THE MODULE
+  ======================
+SFR_AN
+  Relative segment, address: DATA 00000090 - 00000090 (0x1 bytes), align: 0
+  Segment part 1. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_P1                   00000090 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           P1                      00000090 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000F4 - 000000F4 (0x1 bytes), align: 0
+  Segment part 2. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P1SEL                   000000F4 
+
+    *************************************************************************
+
+  FILE NAME : D:\过程控制系统\workspace\inf.多传感器串口实验\Debug\Obj\main.r51
+  PROGRAM MODULE, NAME : main
+
+  SEGMENTS IN THE MODULE
+  ======================
+SFR_AN
+  Relative segment, address: DATA 00000088 - 00000088 (0x1 bytes), align: 0
+  Segment part 1. ROOT        Intra module refs:   URX0_ISR
+                                                   initUart0 (uart)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_TCON                 00000088 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           TCON                    00000088 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 0000009E - 0000009E (0x1 bytes), align: 0
+  Segment part 2. ROOT        Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           CLKCONSTA               0000009E 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000C1 - 000000C1 (0x1 bytes), align: 0
+  Segment part 3. ROOT        Intra module refs:   URX0_ISR
+                                                   uart0Send (uart)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           U0DBUF                  000000C1 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000C6 - 000000C6 (0x1 bytes), align: 0
+  Segment part 4. ROOT        Intra module refs:   main
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           CLKCONCMD               000000C6 
+    -------------------------------------------------------------------------
+NEAR_CODE
+  Relative segment, address: CODE 0000045C - 0000048D (0x32 bytes), align: 0
+  Segment part 13.            Intra module refs:   URX0_ISR::??INTVEC 19
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           URX0_ISR                0000045C 
+               interrupt function
+               calls direct
+               XSTACK = 00000000 ( 0000000F )
+               ISTACK = 00000000 ( 00000001 )
+    -------------------------------------------------------------------------
+<BANKED_CODE> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 00000C5E - 00000CB6 (0x59 bytes), align: 0
+  Segment part 14.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           main                    00000C5E        ?call_main (?cmain)
+               calls direct
+               XSTACK = 00000000 ( 000000CA )
+    -------------------------------------------------------------------------
+INTVEC
+  Common segment, address: CODE 00000000 - 00000015 (0x16 bytes), align: 0
+  Segment part 5. ROOT 
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           URX0_ISR::??INTVEC 19   00000013 
+    -------------------------------------------------------------------------
+XDATA_ID
+  Relative segment, address: CODE 0000008D - 00000094 (0x8 bytes), align: 0
+  Segment part 12.            Intra module refs:   Segment part 11
+    -------------------------------------------------------------------------
+XDATA_I
+  Relative segment, address: XDATA 00000200 - 00000207 (0x8 bytes), align: 0
+  Segment part 11.            Intra module refs:   main
+
+    *************************************************************************
+
+  FILE NAME : D:\过程控制系统\workspace\inf.多传感器串口实验\Debug\Obj\uart.r51
+  PROGRAM MODULE, NAME : uart
+
+  SEGMENTS IN THE MODULE
+  ======================
+SFR_AN
+  Relative segment, address: DATA 00000086 - 00000086 (0x1 bytes), align: 0
+  Segment part 1. ROOT        Intra module refs:   initUart0
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           U0CSR                   00000086 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000A8 - 000000A8 (0x1 bytes), align: 0
+  Segment part 3. ROOT        Intra module refs:   initUart0
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_IEN0                 000000A8 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           IEN0                    000000A8 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000C2 - 000000C2 (0x1 bytes), align: 0
+  Segment part 5. ROOT        Intra module refs:   initUart0
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           U0BAUD                  000000C2 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000C5 - 000000C5 (0x1 bytes), align: 0
+  Segment part 6. ROOT        Intra module refs:   initUart0
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           U0GCR                   000000C5 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000E8 - 000000E8 (0x1 bytes), align: 0
+  Segment part 7. ROOT        Intra module refs:   initUart0
+                                                   uart0Send
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _A_IRCON2               000000E8 
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           IRCON2                  000000E8 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000F1 - 000000F1 (0x1 bytes), align: 0
+  Segment part 8. ROOT        Intra module refs:   initUart0
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           PERCFG                  000000F1 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000FF - 000000FF (0x1 bytes), align: 0
+  Segment part 10. ROOT       Intra module refs:   initUart0
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P2DIR                   000000FF 
+    -------------------------------------------------------------------------
+<BANKED_CODE> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 000009F0 - 00000ABD (0xce bytes), align: 0
+  Segment part 18.            Intra module refs:   initUart0::?relay
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           initUart0               000009F0 
+               XSTACK = 00000000 ( 00000021 )
+               ISTACK = 00000000 ( 00000002 )
+    -------------------------------------------------------------------------
+<BANKED_CODE> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 00000ABE - 00000AEB (0x2e bytes), align: 0
+  Segment part 20.            Intra module refs:   uart0Send::?relay
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           uart0Send               00000ABE 
+               ISTACK = 00000000 ( 00000002 )
+    -------------------------------------------------------------------------
+XDATA_ID
+  Relative segment, address: CODE 00000095 - 000000B5 (0x21 bytes), align: 0
+  Segment part 17.            Intra module refs:   Segment part 16
+    -------------------------------------------------------------------------
+BANK_RELAYS
+  Relative segment, address: CODE 000000FE - 00000103 (0x6 bytes), align: 0
+  Segment part 19.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           initUart0::?relay       000000FE        main (main)
+    -------------------------------------------------------------------------
+BANK_RELAYS
+  Relative segment, address: CODE 00000104 - 00000109 (0x6 bytes), align: 0
+  Segment part 21.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           uart0Send::?relay       00000104        URX0_ISR (main)
+                                                   main (main)
+    -------------------------------------------------------------------------
+XDATA_I
+  Relative segment, address: XDATA 00000208 - 00000228 (0x21 bytes), align: 0
+  Segment part 16.            Intra module refs:   initUart0
+
+    *************************************************************************
+
+  FILE NAME : D:\过程控制系统\开发软件\IAR10_10_1\8051\LIB\DLIB\dl-pli-blxd-1e16x01n.r51
+  LIBRARY MODULE, NAME : ?__dbg_break
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BANKED_CODE> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 00000D36 - 00000D38 (0x3 bytes), align: 0
+  Segment part 6.             Intra module refs:   __DebugBreak::?relay
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __DebugBreak            00000D36 
+    -------------------------------------------------------------------------
+BANK_RELAYS
+  Relative segment, address: CODE 0000010A - 0000010F (0x6 bytes), align: 0
+  Segment part 7.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __DebugBreak::?relay    0000010A        __exit (?__exit)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?__exit
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BANKED_CODE> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 00000CE6 - 00000D09 (0x24 bytes), align: 0
+  Segment part 6.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __exit                  00000CE6        Segment part 10 (?cexit)
+               calls direct
+               XSTACK = 00000000 ( 0000000B )
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?cexit
+
+  SEGMENTS IN THE MODULE
+  ======================
+CSTART
+  Relative segment, address: CODE 00000016, align: 0
+  Segment part 5.             Intra module refs:   _exit::?relay
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _exit                   00000016 
+               calls direct
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: CODE 00000016 - 00000020 (0xb bytes), align: 0
+  Segment part 10.            Intra module refs:   _exit
+    -------------------------------------------------------------------------
+BANK_RELAYS
+  Relative segment, address: CODE 00000110 - 00000115 (0x6 bytes), align: 0
+  Segment part 11.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _exit::?relay           00000110        exit (?exit)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?cmain
+
+  SEGMENTS IN THE MODULE
+  ======================
+CSTART
+  Relative segment, address: CODE 00000021, align: 0
+  Segment part 5.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?cmain                  00000021        Segment part 13 (CSTARTUP)
+               calls direct
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: CODE 00000021 - 00000046 (0x26 bytes), align: 0
+  Segment part 33.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __INIT_XDATA_I          00000021        Segment part 11 (main)
+                                                   Segment part 16 (uart)
+                                                   Segment part 6 (?xprintftiny)
+                                                   Segment part 8 (?xprintftiny)
+                                                   __Constant_0 (?xprintftiny)
+                                                   __Constant_ffff (?xprintftiny)
+    -------------------------------------------------------------------------
+DIFUNCT
+  Relative segment, address: CODE 0000045C, align: 0
+  Segment part 38. ROOT 
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: CODE 00000047 - 0000005C (0x16 bytes), align: 0
+  Segment part 40.            Intra module refs:   ?cmain
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?call_main              00000047 
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : CSTARTUP
+
+  SEGMENTS IN THE MODULE
+  ======================
+REGISTERS
+  Relative segment, address: DATA 00000000, align: 0
+  Segment part 0.             Intra module refs:   Segment part 6
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?REGISTERS              00000000 
+    -------------------------------------------------------------------------
+ISTACK
+  Relative segment, address: IDATA 000000C0, align: 0
+  Segment part 1.             Intra module refs:   Segment part 6
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?ISTACK_START           000000C0 
+    -------------------------------------------------------------------------
+XSTACK
+  Relative segment, address: XDATA 00000001, align: 0
+  Segment part 3.             Intra module refs:   ?RESET_XSP
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?XSTACK_START           00000001 
+    -------------------------------------------------------------------------
+INTVEC
+  Common segment, address: CODE 00000000 - 00000002 (0x3 bytes), align: 0
+  Segment part 5. ROOT        Intra module refs:   Segment part 6
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: CODE 0000005D - 00000062 (0x6 bytes), align: 0
+  Segment part 6. ROOT        Intra module refs:   Segment part 5
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __program_start         0000005D        Absolute parts (?ABS_ENTRY_MOD)
+           ?RESET_SP               00000060 
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: CODE 00000063 - 00000068 (0x6 bytes), align: 0
+  Segment part 8.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?RESET_XSP              00000063        ?XSP (VIRTUAL_REGISTERS)
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: CODE 00000069 - 0000006B (0x3 bytes), align: 0
+  Segment part 9.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?RESET_CODE_BANK        00000069        Absolute parts (?BANKED_CODE_SUPPORT)
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: CODE 0000006C - 0000006E (0x3 bytes), align: 0
+  Segment part 13.            Intra module refs:   Absolute parts
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : VIRTUAL_REGISTERS
+
+  SEGMENTS IN THE MODULE
+  ======================
+BREG
+  Relative segment, address: BIT 00000020.0 - 00000020.7 (0x8 bits), align: 0
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?B0                     00000020.0      Absolute parts (CSTARTUP)
+    -------------------------------------------------------------------------
+VREG
+  Relative segment, address: DATA 00000008 - 00000008 (0x1 bytes), align: 0
+  Segment part 1.             Intra module refs:   ?V1
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?V0                     00000008        ?BANKED_ENTER_XDATA (?BANKED_ENTER_XDATA)
+                                                   ?BANKED_LEAVE_XDATA (?BANKED_LEAVE_XDATA)
+                                                   ?INTERRUPT_ENTER_XSP (?INTERRUPT_ENTER_XSP)
+                                                   ?INTERRUPT_LEAVE_XSP (?INTERRUPT_LEAVE_XSP)
+                                                   ?SL_GE_X (?SL_GE_X)
+                                                   Read_IIC_1_Data (gy30)
+                                                   Segment part 24 (?xprintftiny)
+                                                   _PrintfTiny (?xprintftiny)
+                                                   delayMs (hal_delay)
+                                                   main (main)
+                                                   out (?xprintftiny)
+                                                   sprintf (?sprintf)
+    -------------------------------------------------------------------------
+VREG
+  Relative segment, address: DATA 00000009 - 00000009 (0x1 bytes), align: 0
+  Segment part 2.             Intra module refs:   ?V2
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?V1                     00000009        Segment part 24 (?xprintftiny)
+                                                   _PrintfTiny (?xprintftiny)
+                                                   delayMs (hal_delay)
+                                                   main (main)
+                                                   out (?xprintftiny)
+                                                   sprintf (?sprintf)
+    -------------------------------------------------------------------------
+VREG
+  Relative segment, address: DATA 0000000A - 0000000A (0x1 bytes), align: 0
+  Segment part 3.             Intra module refs:   ?V3
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?V2                     0000000A        Segment part 24 (?xprintftiny)
+                                                   _PrintfTiny (?xprintftiny)
+                                                   out (?xprintftiny)
+    -------------------------------------------------------------------------
+VREG
+  Relative segment, address: DATA 0000000B - 0000000B (0x1 bytes), align: 0
+  Segment part 4.             Intra module refs:   ?V4
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?V3                     0000000B        Segment part 24 (?xprintftiny)
+                                                   _PrintfTiny (?xprintftiny)
+                                                   out (?xprintftiny)
+    -------------------------------------------------------------------------
+VREG
+  Relative segment, address: DATA 0000000C - 0000000C (0x1 bytes), align: 0
+  Segment part 5.             Intra module refs:   ?V5
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?V4                     0000000C        _PrintfTiny (?xprintftiny)
+                                                   out (?xprintftiny)
+    -------------------------------------------------------------------------
+VREG
+  Relative segment, address: DATA 0000000D - 0000000D (0x1 bytes), align: 0
+  Segment part 6.             Intra module refs:   ?V6
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?V5                     0000000D        _PrintfTiny (?xprintftiny)
+                                                   out (?xprintftiny)
+    -------------------------------------------------------------------------
+VREG
+  Relative segment, address: DATA 0000000E - 0000000E (0x1 bytes), align: 0
+  Segment part 7.             Intra module refs:   ?V7
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?V6                     0000000E        _PrintfTiny (?xprintftiny)
+    -------------------------------------------------------------------------
+VREG
+  Relative segment, address: DATA 0000000F - 0000000F (0x1 bytes), align: 0
+  Segment part 8.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?V7                     0000000F        _PrintfTiny (?xprintftiny)
+    -------------------------------------------------------------------------
+XSP
+  Relative segment, address: DATA 00000010 - 00000011 (0x2 bytes), align: 0
+  Segment part 34.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?XSP                    00000010        ?ADD_XSTACK_DISP0_8 (?ADD_XSTACK_DISP8)
+                                                   ?ALLOC_XSTACK8 (?ALLOC_XSTACK8)
+                                                   ?BANKED_ENTER_XDATA (?BANKED_ENTER_XDATA)
+                                                   ?BANKED_LEAVE_XDATA (?BANKED_LEAVE_XDATA)
+                                                   ?DEALLOC_XSTACK8 (?DEALLOC_XSTACK8)
+                                                   ?INTERRUPT_ENTER_XSP (?INTERRUPT_ENTER_XSP)
+                                                   ?INTERRUPT_LEAVE_XSP (?INTERRUPT_LEAVE_XSP)
+                                                   ?PUSH_XSTACK8_X (?PUSH_XSTACK8_X)
+                                                   ?RESET_XSP (CSTARTUP)
+                                                   ?XSTACK_DISP0_8 (?XSTACK_DISP8)
+                                                   ?XSTACK_DISP100_8 (?XSTACK_DISP8_RP)
+                                                   ?XSTACK_DISP101_8 (?XSTACK_DISP8_RP)
+                                                   ?XSTACK_DISP102_8 (?XSTACK_DISP8_RP)
+                                                   Segment part 18 (?xprintftiny)
+                                                   URX0_ISR (main)
+                                                   _PrintfTiny (?xprintftiny)
+                                                   __exit (?__exit)
+                                                   initUart0 (uart)
+                                                   main (main)
+                                                   sprintf (?sprintf)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?exit
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BANKED_CODE> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 00000D28 - 00000D35 (0xe bytes), align: 0
+  Segment part 6.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           exit                    00000D28        ?call_main (?cmain)
+               calls direct
+               ISTACK = 00000000 ( 00000002 )
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?BANKED_CODE_SUPPORT
+
+  SEGMENTS IN THE MODULE
+  ======================
+CSTART
+  Relative segment, address: CODE 0000006F - 0000008C (0x1e bytes), align: 0
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?BCALL_FF               0000006F        ?call_main (?cmain)
+                                                   Segment part 10 (?cexit)
+           ?BRET_FF                00000075        ?BANKED_LEAVE_XDATA (?BANKED_LEAVE_XDATA)
+                                                   IIC_Init (iic)
+                                                   IIC_Start (iic)
+                                                   IIC_Stop (iic)
+                                                   _SProut (?xsprout)
+                                                   __DebugBreak (?__dbg_break)
+                                                   delayUsIn32Mhz (hal_delay)
+                                                   exit (?exit)
+                                                   initUart0 (uart)
+                                                   strlen (?strlen)
+                                                   uart0Send (uart)
+           ?BDISPATCH_FF           00000078        IIC_GetACK::?relay (iic)
+                                                   IIC_Init::?relay (iic)
+                                                   IIC_ReadOneByteData::?relay (iic)
+                                                   IIC_SendACK::?relay (iic)
+                                                   IIC_Start::?relay (iic)
+                                                   IIC_Stop::?relay (iic)
+                                                   IIC_WriteOneByteData::?relay (iic)
+                                                   Read_IIC_1_Data::?relay (gy30)
+                                                   _PrintfTiny::?relay (?xprintftiny)
+                                                   _SProut::?relay (?xsprout)
+                                                   __DebugBreak::?relay (?__dbg_break)
+                                                   _exit::?relay (?cexit)
+                                                   delayMs::?relay (hal_delay)
+                                                   delayUsIn32Mhz::?relay (hal_delay)
+                                                   initUart0::?relay (uart)
+                                                   out::?relay (?xprintftiny)
+                                                   sprintf::?relay (?sprintf)
+                                                   strlen::?relay (?strlen)
+                                                   uart0Send::?relay (uart)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?SL_GE_X
+
+  SEGMENTS IN THE MODULE
+  ======================
+RCODE
+  Relative segment, address: CODE 00000134 - 00000159 (0x26 bytes), align: 0
+  Segment part 1.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?SL_GE_X                00000134        _PrintfTiny (?xprintftiny)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?UL_DIV_MOD
+
+  SEGMENTS IN THE MODULE
+  ======================
+RCODE
+  Relative segment, address: CODE 0000015A - 000001C8 (0x6f bytes), align: 0
+  Segment part 1.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?UL_DIV_MOD             0000015A        _PrintfTiny (?xprintftiny)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?L_NEG
+
+  SEGMENTS IN THE MODULE
+  ======================
+RCODE
+  Relative segment, address: CODE 000001C9 - 000001D9 (0x11 bytes), align: 0
+  Segment part 1.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?L_NEG                  000001C9        _PrintfTiny (?xprintftiny)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?L_AND_X
+
+  SEGMENTS IN THE MODULE
+  ======================
+RCODE
+  Relative segment, address: CODE 000001DA - 000001EC (0x13 bytes), align: 0
+  Segment part 1.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?L_AND_X                000001DA        _PrintfTiny (?xprintftiny)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?L_MOV_X
+
+  SEGMENTS IN THE MODULE
+  ======================
+RCODE
+  Relative segment, address: CODE 000001ED - 000001FB (0xf bytes), align: 0
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?L_MOV_X                000001ED        _PrintfTiny (?xprintftiny)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?L_MOV_TO_X
+
+  SEGMENTS IN THE MODULE
+  ======================
+RCODE
+  Relative segment, address: CODE 000001FC - 0000020A (0xf bytes), align: 0
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?L_MOV_TO_X             000001FC        _PrintfTiny (?xprintftiny)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?XLOAD_R0123
+
+  SEGMENTS IN THE MODULE
+  ======================
+RCODE
+  Relative segment, address: CODE 0000020B - 00000216 (0xc bytes), align: 0
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?XLOAD_R0123            0000020B        _PrintfTiny (?xprintftiny)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?MOVE_LONG8_XDATA_IDATA
+
+  SEGMENTS IN THE MODULE
+  ======================
+RCODE
+  Relative segment, address: CODE 00000217 - 00000223 (0xd bytes), align: 0
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?MOVE_LONG8_XDATA_IDATA
+                                   00000217        ?PUSH_XSTACK_I (?PUSH_XSTACK_I)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?MOVE_LONG8_XDATA_XDATA
+
+  SEGMENTS IN THE MODULE
+  ======================
+RCODE
+  Relative segment, address: CODE 00000224 - 00000244 (0x21 bytes), align: 0
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?MOVE_LONG8_XDATA_XDATA
+                                   00000224        ?PUSH_XSTACK8_X (?PUSH_XSTACK8_X)
+                                                   initUart0 (uart)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?ALLOC_XSTACK8
+
+  SEGMENTS IN THE MODULE
+  ======================
+RCODE
+  Relative segment, address: CODE 00000245 - 0000025A (0x16 bytes), align: 0
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?ALLOC_XSTACK8          00000245        URX0_ISR (main)
+                                                   _PrintfTiny (?xprintftiny)
+                                                   __exit (?__exit)
+                                                   initUart0 (uart)
+                                                   main (main)
+                                                   sprintf (?sprintf)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?DEALLOC_XSTACK8
+
+  SEGMENTS IN THE MODULE
+  ======================
+RCODE
+  Relative segment, address: CODE 0000025B - 00000275 (0x1b bytes), align: 0
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?DEALLOC_XSTACK8        0000025B        URX0_ISR (main)
+                                                   _PrintfTiny (?xprintftiny)
+                                                   initUart0 (uart)
+                                                   main (main)
+                                                   sprintf (?sprintf)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?ADD_XSTACK_DISP8
+
+  SEGMENTS IN THE MODULE
+  ======================
+RCODE
+  Relative segment, address: CODE 00000276 - 00000290 (0x1b bytes), align: 0
+  Segment part 1.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?ADD_XSTACK_DISP0_8     00000276        ?PUSH_XSTACK_I (?PUSH_XSTACK_I)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?XSTACK_DISP8
+
+  SEGMENTS IN THE MODULE
+  ======================
+RCODE
+  Relative segment, address: CODE 00000291 - 0000029A (0xa bytes), align: 0
+  Segment part 1.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?XSTACK_DISP0_8         00000291        _PrintfTiny (?xprintftiny)
+                                                   out (?xprintftiny)
+                                                   sprintf (?sprintf)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?XSTACK_DISP8_RP
+
+  SEGMENTS IN THE MODULE
+  ======================
+RCODE
+  Relative segment, address: CODE 0000029B - 000002A2 (0x8 bytes), align: 0
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?XSTACK_DISP100_8       0000029B        _PrintfTiny (?xprintftiny)
+                                                   sprintf (?sprintf)
+    -------------------------------------------------------------------------
+RCODE
+  Relative segment, address: CODE 000002A3 - 000002AA (0x8 bytes), align: 0
+  Segment part 1.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?XSTACK_DISP101_8       000002A3        main (main)
+    -------------------------------------------------------------------------
+RCODE
+  Relative segment, address: CODE 000002AB - 000002B2 (0x8 bytes), align: 0
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?XSTACK_DISP102_8       000002AB        sprintf (?sprintf)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?CALL_IND
+
+  SEGMENTS IN THE MODULE
+  ======================
+RCODE
+  Relative segment, address: CODE 000002B3 - 000002B4 (0x2 bytes), align: 0
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?CALL_IND               000002B3        out (?xprintftiny)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?BANKED_ENTER_XDATA
+
+  SEGMENTS IN THE MODULE
+  ======================
+RCODE
+  Relative segment, address: CODE 000002B5 - 00000320 (0x6c bytes), align: 0
+  Segment part 1.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?BANKED_ENTER_XDATA     000002B5        IIC_GetACK (iic)
+                                                   IIC_ReadOneByteData (iic)
+                                                   IIC_SendACK (iic)
+                                                   IIC_WriteOneByteData (iic)
+                                                   Read_IIC_1_Data (gy30)
+                                                   _PrintfTiny (?xprintftiny)
+                                                   __exit (?__exit)
+                                                   delayMs (hal_delay)
+                                                   out (?xprintftiny)
+                                                   sprintf (?sprintf)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?BANKED_LEAVE_XDATA
+
+  SEGMENTS IN THE MODULE
+  ======================
+RCODE
+  Relative segment, address: CODE 00000321 - 00000366 (0x46 bytes), align: 0
+  Segment part 1.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?BANKED_LEAVE_XDATA     00000321        IIC_GetACK (iic)
+                                                   IIC_ReadOneByteData (iic)
+                                                   IIC_SendACK (iic)
+                                                   IIC_WriteOneByteData (iic)
+                                                   Read_IIC_1_Data (gy30)
+                                                   _PrintfTiny (?xprintftiny)
+                                                   delayMs (hal_delay)
+                                                   out (?xprintftiny)
+                                                   sprintf (?sprintf)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?INTERRUPT_ENTER_XSP
+
+  SEGMENTS IN THE MODULE
+  ======================
+RCODE
+  Relative segment, address: CODE 00000367 - 000003C5 (0x5f bytes), align: 0
+  Segment part 1.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?INTERRUPT_ENTER_XSP    00000367        URX0_ISR (main)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?INTERRUPT_LEAVE_XSP
+
+  SEGMENTS IN THE MODULE
+  ======================
+RCODE
+  Relative segment, address: CODE 000003C6 - 0000041D (0x58 bytes), align: 0
+  Segment part 1.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?INTERRUPT_LEAVE_XSP    000003C6        URX0_ISR (main)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?PUSH_XSTACK_I
+
+  SEGMENTS IN THE MODULE
+  ======================
+RCODE
+  Relative segment, address: CODE 0000041E - 00000421 (0x4 bytes), align: 0
+  Segment part 2.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?PUSH_XSTACK_I_TWO      0000041E        _PrintfTiny (?xprintftiny)
+                                                   main (main)
+                                                   sprintf (?sprintf)
+    -------------------------------------------------------------------------
+RCODE
+  Relative segment, address: CODE 00000422 - 0000042E (0xd bytes), align: 0
+  Segment part 4.             Intra module refs:   ?PUSH_XSTACK_I_TWO
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?PUSH_XSTACK_I          00000422 
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?PUSH_XSTACK8_X
+
+  SEGMENTS IN THE MODULE
+  ======================
+RCODE
+  Relative segment, address: CODE 0000042F - 00000432 (0x4 bytes), align: 0
+  Segment part 3.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?PUSH_XSTACK8_X_TWO     0000042F        _PrintfTiny (?xprintftiny)
+    -------------------------------------------------------------------------
+RCODE
+  Relative segment, address: CODE 00000433 - 0000045B (0x29 bytes), align: 0
+  Segment part 5.             Intra module refs:   ?PUSH_XSTACK8_X_TWO
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?PUSH_XSTACK8_X         00000433 
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?sprintf
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BANKED_CODE> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 00000AEC - 00000B78 (0x8d bytes), align: 0
+  Segment part 6.             Intra module refs:   sprintf::?relay
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           sprintf                 00000AEC 
+               calls direct
+               XSTACK = 00000000 ( 00000012 )
+    -------------------------------------------------------------------------
+BANK_RELAYS
+  Relative segment, address: CODE 00000116 - 0000011B (0x6 bytes), align: 0
+  Segment part 7.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           sprintf::?relay         00000116        main (main)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?strlen
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BANKED_CODE> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 00000D0A - 00000D27 (0x1e bytes), align: 0
+  Segment part 6.             Intra module refs:   strlen::?relay
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           strlen                  00000D0A 
+               is indirectly called
+               ISTACK = 00000000 ( 00000002 )
+    -------------------------------------------------------------------------
+BANK_RELAYS
+  Relative segment, address: CODE 0000011C - 00000121 (0x6 bytes), align: 0
+  Segment part 7.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           strlen::?relay          0000011C        _PrintfTiny (?xprintftiny)
+                                                   main (main)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?xprintftiny
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BANKED_CODE> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 0000048E - 000004DF (0x52 bytes), align: 0
+  Segment part 14.            Intra module refs:   out::?relay
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           out                     0000048E 
+               XSTACK = 0000002F ( 0000000E )
+    -------------------------------------------------------------------------
+<BANKED_CODE> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 000004E0 - 00000860 (0x381 bytes), align: 0
+  Segment part 16.            Intra module refs:   _PrintfTiny::?relay
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _PrintfTiny             000004E0 
+               calls direct
+               XSTACK = 00000004 ( 0000002F )
+               ISTACK = 00000000 ( 00000001 )
+    -------------------------------------------------------------------------
+<BANKED_CODE> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 00000861 - 00000869 (0x9 bytes), align: 0
+  Segment part 18.            Intra module refs:   _PrintfTiny
+    -------------------------------------------------------------------------
+<BANKED_CODE> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 0000086A - 0000086F (0x6 bytes), align: 0
+  Segment part 19.            Intra module refs:   _PrintfTiny
+    -------------------------------------------------------------------------
+<BANKED_CODE> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 00000870 - 00000873 (0x4 bytes), align: 0
+  Segment part 20.            Intra module refs:   Segment part 19
+                                                   Segment part 27
+                                                   _PrintfTiny
+    -------------------------------------------------------------------------
+<BANKED_CODE> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 00000874 - 0000087C (0x9 bytes), align: 0
+  Segment part 21.            Intra module refs:   Segment part 20
+                                                   Segment part 23
+    -------------------------------------------------------------------------
+<BANKED_CODE> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 0000087D - 00000880 (0x4 bytes), align: 0
+  Segment part 22.            Intra module refs:   _PrintfTiny
+    -------------------------------------------------------------------------
+<BANKED_CODE> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 00000881 - 00000888 (0x8 bytes), align: 0
+  Segment part 23.            Intra module refs:   Segment part 22
+                                                   Segment part 24
+    -------------------------------------------------------------------------
+<BANKED_CODE> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 00000889 - 00000899 (0x11 bytes), align: 0
+  Segment part 24.            Intra module refs:   _PrintfTiny
+    -------------------------------------------------------------------------
+<BANKED_CODE> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 0000089A - 0000089E (0x5 bytes), align: 0
+  Segment part 25.            Intra module refs:   _PrintfTiny
+    -------------------------------------------------------------------------
+<BANKED_CODE> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 0000089F - 000008AB (0xd bytes), align: 0
+  Segment part 26.            Intra module refs:   Segment part 25
+                                                   _PrintfTiny
+    -------------------------------------------------------------------------
+<BANKED_CODE> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 000008AC - 000008B4 (0x9 bytes), align: 0
+  Segment part 27.            Intra module refs:   _PrintfTiny
+    -------------------------------------------------------------------------
+<BANKED_CODE> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 000008B5 - 000008BE (0xa bytes), align: 0
+  Segment part 28.            Intra module refs:   Segment part 27
+                                                   _PrintfTiny
+    -------------------------------------------------------------------------
+XDATA_ID
+  Relative segment, address: CODE 000000B6 - 000000B7 (0x2 bytes), align: 0
+  Segment part 7.             Intra module refs:   Segment part 6
+    -------------------------------------------------------------------------
+XDATA_ID
+  Relative segment, address: CODE 000000B8 - 000000B9 (0x2 bytes), align: 0
+  Segment part 9.             Intra module refs:   Segment part 8
+    -------------------------------------------------------------------------
+XDATA_ID
+  Relative segment, address: CODE 000000BA - 000000BD (0x4 bytes), align: 0
+  Segment part 11.            Intra module refs:   __Constant_0
+    -------------------------------------------------------------------------
+XDATA_ID
+  Relative segment, address: CODE 000000BE - 000000C1 (0x4 bytes), align: 0
+  Segment part 13.            Intra module refs:   __Constant_ffff
+    -------------------------------------------------------------------------
+BANK_RELAYS
+  Relative segment, address: CODE 00000122 - 00000127 (0x6 bytes), align: 0
+  Segment part 15.            Intra module refs:   _PrintfTiny
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           out::?relay             00000122 
+    -------------------------------------------------------------------------
+BANK_RELAYS
+  Relative segment, address: CODE 00000128 - 0000012D (0x6 bytes), align: 0
+  Segment part 17.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _PrintfTiny::?relay     00000128        sprintf (?sprintf)
+    -------------------------------------------------------------------------
+XDATA_I
+  Relative segment, address: XDATA 00000229 - 0000022A (0x2 bytes), align: 0
+  Segment part 6.             Intra module refs:   _PrintfTiny
+    -------------------------------------------------------------------------
+XDATA_I
+  Relative segment, address: XDATA 0000022B - 0000022C (0x2 bytes), align: 0
+  Segment part 8.             Intra module refs:   _PrintfTiny
+    -------------------------------------------------------------------------
+XDATA_I
+  Relative segment, address: XDATA 0000022D - 00000230 (0x4 bytes), align: 0
+  Segment part 10.            Intra module refs:   _PrintfTiny
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __Constant_0            0000022D 
+    -------------------------------------------------------------------------
+XDATA_I
+  Relative segment, address: XDATA 00000231 - 00000234 (0x4 bytes), align: 0
+  Segment part 12.            Intra module refs:   _PrintfTiny
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __Constant_ffff         00000231 
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?xsprout
+
+  SEGMENTS IN THE MODULE
+  ======================
+<BANKED_CODE> 1 (was BANKED_CODE)
+  Relative segment, address: CODE 00000CB7 - 00000CE5 (0x2f bytes), align: 0
+  Segment part 6.             Intra module refs:   _SProut::?relay
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _SProut                 00000CB7 
+               ISTACK = 00000000 ( 00000003 )
+    -------------------------------------------------------------------------
+BANK_RELAYS
+  Relative segment, address: CODE 0000012E - 00000133 (0x6 bytes), align: 0
+  Segment part 7.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _SProut::?relay         0000012E        sprintf (?sprintf)
+
+
+
+
+                ****************************************
+                *                                      *
+                *      SEGMENTS IN ADDRESS ORDER       *
+                *                                      *
+                ****************************************
+
+
+SEGMENT              SPACE    START ADDRESS   END ADDRESS     SIZE  TYPE  ALIGN
+=======              =====    =============   ===========     ====  ====  =====
+INTVEC               CODE          00000000 - 00000015          16   com    0
+CSTART               CODE          00000016 - 0000008C          77   rel    0
+IDATA_ID             CODE               0000008D                     dse    0
+BDATA_ID             CODE               0000008D                     dse    0
+BIT_ID               CODE               0000008D                     dse    0
+IXDATA_ID            CODE               0000008D                     dse    0
+PDATA_ID             CODE               0000008D                     dse    0
+DATA_ID              CODE               0000008D                     dse    0
+XDATA_ID             CODE          0000008D - 000000C1          35   rel    0
+BANK_RELAYS          CODE          000000C2 - 00000133          72   rel    0
+RCODE                CODE          00000134 - 0000045B         328   rel    0
+CODE_C               CODE               0000045C                     dse    0
+CODE_N               CODE               0000045C                     dse    0
+DIFUNCT              CODE               0000045C                     rel    0
+NEAR_CODE            CODE          0000045C - 0000048D          32   rel    0
+<BANKED_CODE> 1      CODE          0000048E - 00000D38         8AB   rel    0
+REGISTERS            DATA          00000000 - 00000007           8   rel    0
+VREG                 DATA          00000008 - 0000000F           8   rel    0
+PSP                  DATA               00000010                     dse    0
+XSP                  DATA          00000010 - 00000011           2   rel    0
+BREG                 BIT        00000020.0  -  00000020.7        8   rel    0
+SFR_AN               DATA          00000080 - 00000080           1   rel    0
+                     DATA          00000086 - 00000086           1 
+                     DATA          00000088 - 00000088           1 
+                     DATA          0000008F - 00000090           2 
+                     DATA          0000009E - 0000009E           1 
+                     DATA          000000A8 - 000000A8           1 
+                     DATA          000000B4 - 000000B4           1 
+                     DATA          000000B6 - 000000B6           1 
+                     DATA          000000BA - 000000BB           2 
+                     DATA          000000C1 - 000000C2           2 
+                     DATA          000000C5 - 000000C6           2 
+                     DATA          000000E8 - 000000E8           1 
+                     DATA          000000F1 - 000000F4           4 
+                     DATA          000000F7 - 000000F7           1 
+                     DATA          000000FD - 000000FF           3 
+XSTACK               XDATA         00000001 - 000001FF         1FF   rel    0
+XDATA_Z              XDATA              00000200                     dse    0
+XDATA_I              XDATA         00000200 - 00000234          35   rel    0
+ISTACK               IDATA         000000C0 - 000000FF          40   rel    0
+
+                ****************************************
+                *                                      *
+                *        END OF CROSS REFERENCE        *
+                *                                      *
+                ****************************************
+
+ 3 385 bytes of CODE  memory
+    18 bytes of DATA  memory (+ 24 absolute )
+   564 bytes of XDATA memory
+    64 bytes of IDATA memory
+     8 bits  of BIT   memory
+
+Errors: none
+Warnings: none
+
