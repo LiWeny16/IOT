@@ -1,6 +1,6 @@
 #include "hal_dht11.h"
 #include "hal_delay.h"
-#include "hal_adc.h"
+//#include "hal_adc.h"
 #include "gy30.h"
 #include "uart.h"
 #include "iic.h"
@@ -125,8 +125,8 @@ void main(void)
     
     State_Init();
     initUart0(USART_BAUDRATE_9600);
-    IIC_Init();
-    halDHT11Init();
+    IIC_Init();//光照传感器
+    halDHT11Init();//温湿度传感器
     IO_Init();
     
     setSystemClk32MHZ();
@@ -135,8 +135,8 @@ void main(void)
 
     while(1)
     {
-      lightDat = Read_IIC_1_Data();
-      dht11Dat = halDHT11GetData();
+      lightDat = Read_IIC_1_Data(); //经过计算过的光强LX /1.2
+      dht11Dat = halDHT11GetData();//温湿度
       if(Human1)
       {
         humanFlag1=1;
@@ -151,7 +151,7 @@ void main(void)
       else humanCount2++;
       if(humanCount1>=10)humanFlag1=0;
       if(humanCount2>=10)humanFlag2=0;
-      
+      //延时10s
       sprintf((char *)dataStr, "%d,%ld,%ld,%d,%d,%d%d%d%d%d%d%d%d%d?",
               lightDat, dht11Dat.temp, dht11Dat.humi, humanFlag1, humanFlag2,
               state.en, state.led1, state.led2, state.led3, state.led4,
